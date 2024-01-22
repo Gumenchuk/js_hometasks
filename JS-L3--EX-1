@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Name</title>
+    </head>
+    <body>
+        <!--Comment-->
+        <p>text1<span>text2</span>text3</p>
+        <ul>
+            <li>test1</li>
+            <li>test2</li>
+            <li>test3</li>
+            <li>test4</li>
+        </ul>
+        <script>
+            console.log(document.body.childNodes[5].childNodes[1].innerHTML);
+            console.log(document.body.childNodes[5].childNodes[3].innerHTML);
+            console.log(document.body.childNodes[5].childNodes[5].innerHTML);
+            console.log(document.body.childNodes[5].childNodes[7].innerHTML);
+        </script>
+    </body>
+</html>
+
+
+
+
+
+7:49
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Name</title>
+    </head>
+    <body>
+        <!--Comment-->
+        <p>text1<span>text2</span>text3</p>
+        <ul>
+            <li>test1</li>
+            <li>test2</li>
+            <li>test3</li>
+            <li>test4</li>
+        </ul>
+        <script>
+            let i = 1;
+            while(i<=7){
+                console.log(document.body.childNodes[5].childNodes[i].innerHTML);
+                i = i+2;
+            }
+        </script>
+    </body>
+</html>
